@@ -1,13 +1,40 @@
 <div class="main-container">
-  <div class="title-container">
-    <div class="title-main">
-      내집탐방의</br>
-      원룸리뷰를 평가해주세요.
-    </div>
-    <div class="title-sub">
-      후기는 익명으로만 작성 가능합니다.</br>
-      응모번호를 행사 부스로 가져오시면 추첨을 통해 푸짐한 상품을 드립니다.
+  <%= image_tag 'background/yonsei.jpeg', class: "img-background" %>
+</div>
+
+<div class="modal fade" id="modal-form" role="dialog">
+  <div class="modal-dialog form">
+    <div class="modal-content">
+      <div class="modal-title">
+        <div>서비스 평가하기</div>
+        <div class="close" data-dismiss="modal">
+          <%= image_tag 'buttons/close.png', class: "cancel" %>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div>서비스 이용후기를 작성해주세요</div>
+        <textarea class="textarea"></textarea>
+      </div>
+      <div class="modal-bottom complete">
+        <div class="btn-okay">작성 완료</div>
+      </div>
     </div>
   </div>
-  <%= image_tag 'background/yonsei.jpeg', class: "img-background" %>
+  <div class="modal-dialog result">
+    <div class="modal-content">
+      <div class="modal-title">
+        <div>응모번호</div>
+        <div class="close" data-dismiss="modal">
+          <%= image_tag 'buttons/close.png', class: "cancel" %>
+        </div>
+      </div>
+      <div class="modal-body result">
+        <div class="result"></div>
+        <div>해당 응모번호를 부스에 보여주셔야 접수됩니다!</div>
+      </div>
+      <div class="modal-bottom complete">
+        <div class="btn-okay">확인</div>
+      </div>
+    </div>
+  </div>
 </div>

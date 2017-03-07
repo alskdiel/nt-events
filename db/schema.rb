@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170307045331) do
+ActiveRecord::Schema.define(version: 20170307071547) do
 
-  create_table "yonsie_univs", force: :cascade do |t|
+  create_table "yonsei_univs", force: :cascade do |t|
+    t.text     "feedback"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
