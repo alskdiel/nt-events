@@ -1,0 +1,2 @@
+class YonseiUnivController < ApplicationController
+end

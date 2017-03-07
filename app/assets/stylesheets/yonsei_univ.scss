@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  .main-container {
+    .title-container {
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      padding: 30px;
+      .title-main {
+        font-size: 45px;
+      }
+      .title-sub {
+        font-size: 20px;
+      }
+    }
+    .img-background {
+      width: 100%;
+    }
+  }
+}
